@@ -23,8 +23,8 @@ app.use(router);
 
 
 
-app.listen(port,()=>{
+app.listen(port, () => {
     console.log(`your server is running on port ${port} `);
 });
 
-DefaultData();
+//DefaultData();
