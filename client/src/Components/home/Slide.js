@@ -2,7 +2,7 @@ import React from 'react'
 import "../home/slide.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import { products } from './productdata';
+import { products } from './productdata';
 import { Divider } from '@mui/material';
 import { NavLink } from "react-router-dom";
 
@@ -21,7 +21,7 @@ const responsive = {
     }
 };
 
-const Slide = ({ title, products }) => {
+const Slide = ({ title, products = [] }) => {
 
 
     return (
