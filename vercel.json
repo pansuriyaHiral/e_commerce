@@ -2,15 +2,15 @@
     "version": 2,
     "builds": [
         {
-            "src": "server/app.js",
+            "src": "backend/app.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "server/app.js"
+            "dest": "backend/app.js"
         }
     ],
-    "buildCommand": "npm install --prefix server && npm install --prefix client && npm run build --prefix client"
+    "buildCommand": "npm install --prefix backend && npm install --prefix client && npm run build --prefix client"
 }
